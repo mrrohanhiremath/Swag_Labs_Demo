@@ -17,5 +17,17 @@ public class Productpage {
 	public void getDropdown() {
 		dropdown.click();
 	}
+	//cartlogo
+	@FindBy(xpath = "//a[@data-test=\"shopping-cart-link\"]")
+	private WebElement cartlogo;
+	public void getCartlogo() {
+		cartlogo.click();
+	}
+	//hamburger
+	@FindBy(xpath = "//button[@id=\"react-burger-menu-btn\"]")
+	private WebElement hamburger;
+	public WebElement getHamburger() {
+		return hamburger;
+	}
 
 }
